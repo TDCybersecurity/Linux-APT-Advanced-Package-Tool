@@ -1,56 +1,68 @@
-<p align="center">
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/dd2c8426-7ab3-4881-a195-a123c6dc2628)
- <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/f696abf5-ea5c-42f5-b481-28c5a0b8a5fe)
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/64ac641a-369b-48bf-a380-649a3916683e)
 
 
-<h2>Video Demonstration</h2>
+<h1>Installing Software in a Linux Distribution</h1>
+This tutorial outlines how to install and uninstall applications in Linux, using Linux commands in a Bash shell, and using APT package manager to install Suricata and tcpdump.<br />
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+<h2>Exercises for the lab.</h2>
 
-<h2>Environments and Technologies Used</h2>
+- 1 Ensure that APT is installed.
+- 2 Install -and- uninstall Suricata.
+- 3 Install tcpdump.
+- 4 List installed applications.
+- 5 Reinstall suricata.
+- 6 Show new list of applications.
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+<h2>The ($) is your prompt, ths is where you will enter your commands.</h2>
 
-- Windows 10</b> (21H2)
+Step 1: Enter apt and then press enter, then press enter again.  
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/03c60731-c668-49d3-a8e2-a3dae4ca6034)
 
-<h2>List of Prerequisites</h2>
+Step 2: 2a) Enter sudo apt install suricata press enter, then press enter again.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/b86b82a9-4178-44e2-9ec4-24b2812707e8)
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
 
-<h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+2b) Enter suricata and press enter.  This verifies the installation of suricata.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/0df6ca24-14f3-4c52-8174-46535953e205)
+
+
+2c) Enter sudo apt remove suricata press enter, then press enter again.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/226dbac1-0f78-45ab-981e-dbb1fb5b9735)
+
+2d) Verify that suricata is uninstalled.  You will know suricata is uninstalled when you see -bash:/usr/bin/suricata: No such file or directory.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/a43b92ca-3621-4d5b-8832-c71c414db8a6)
+
+
+Step 3: Enter sudo apt install tcpdump and press enter, then press enter again.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/e8c95676-6624-43a3-9e56-6f6f13848547)
+
+
+Step 4: Enter apt list --installed then enter.  This will allow you to view the installed files.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/3610b893-5493-4d2c-bac2-33c4566ee57e)
+
+Step 5: Enter sudo apt installs suricata then enter, then enter again.  This reinstall suricata.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/231ef3a9-4ab9-447c-b774-fa14eb24a3f0)
+
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+Step 6: Enter sudo apt List --installed then enter to display the installed labs.
+![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/cec62bf4-e756-4f3e-aabd-cfefd27f985c)
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br /># osticket-prereqs
+We have explored how to use APT to install and uninstall packages, verify an installed app, remove an installed app, and list all apps.  Understanding APT is essential for maintaining a healthy Linux system, ensuring you have the right software at your fingertips, and keeping your system secure and up-to-date.</p>
+<br /># Linux APT Application Package Tool
