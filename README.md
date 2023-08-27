@@ -16,7 +16,7 @@ This tutorial outlines how to install and uninstall applications in Linux, using
 - 6 Show new list of applications.
 
 
-<h2>The ($) is your prompt, ths is where you will enter your commands.</h2>
+<h2>The ($) is your prompt, this is where you will enter your commands.</h2>
 
 Step 1: Enter apt and then press enter, then press enter again.  
 ![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/03c60731-c668-49d3-a8e2-a3dae4ca6034)
