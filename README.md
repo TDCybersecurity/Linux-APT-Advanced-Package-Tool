@@ -1,68 +1,165 @@
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/f696abf5-ea5c-42f5-b481-28c5a0b8a5fe)
+# VPN-Virtual-Private-Network
+**(VPN) Virtual Private Networks: Set up and Usage of Proton VPN**
 
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/64ac641a-369b-48bf-a380-649a3916683e)
+A VPN, or Virtual Private Network, is a service that creates a **secure** and **private** connection to the internet. It acts like a **private tunnel**, _hiding your online activities from others_ and making your internet use more **secure** and **anonymous**.
 
+**Benefits of using a VPN**
 
-<h1>Installing Software in a Linux Distribution</h1>
-This tutorial outlines how to install and uninstall applications in Linux, using Linux commands in a Bash shell, and using APT package manager to install Suricata and tcpdump.<br />
+- **Privacy Protection:** Hides your IP Address and online activities from hackers, advertisers, and government surveillance.
+- **Security:** Encrypts your internet connection, protecting your data from being intercepted by cybercriminals, especially on public Wi-Fi.
+- **Access to Restricted Content:** Allows you to bypass geographical restrictions to access websites, streaming services, and content that may be blocked in your location.
+- **Safe Browsing:** Reduces the risk of malware and phishing attacks by blocking malicious websites.
+- **Anonymity:** Makes your online actions harder to trace back to you, enhancing your anonymity online.
 
-<h2>Exercises for the lab.</h2>
+1 In your browser type in **whatismyipaddress.com**
+![VPN1 WhatismyIPAddress](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/5276774c-118e-4cc7-a6c8-de72d421239a)
+![](RackMultipart20240518-1-nonpfk_html_9d52d1543893b735.jpg)
 
-- 1 Ensure that APT is installed.
-- 2 Install -and- uninstall Suricata.
-- 3 Install tcpdump.
-- 4 List installed applications.
-- 5 Reinstall suricata.
-- 6 Show new list of applications.
+1.1 Take note of the information.
 
+| **IPv4**| **Internet Service Provider**| **City**| **Region**| **Country**|
+| --- | --- | --- | --- | --- |
+| 100.2.XX.XXX | Verizon | New York City | New York | United States |
 
-<h2>The ($) is your prompt, this is where you will enter your commands.</h2>
+2 Create a **(VM) Virtual Machine** with **(no VPN)** in **Azure** and connect to your PC using **(RDC) Remote Desktop Protocol**.
 
-Step 1: Enter apt and then press enter, then press enter again.  
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/03c60731-c668-49d3-a8e2-a3dae4ca6034)
-
-Step 2: 2a) Enter sudo apt install suricata press enter, then press enter again.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/b86b82a9-4178-44e2-9ec4-24b2812707e8)
-
-
-
-2b) Enter suricata and press enter.  This verifies the installation of suricata.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/0df6ca24-14f3-4c52-8174-46535953e205)
+2.1 Open a browser and enter **portal.azure.com.**
+![VPN2 portalazurecom](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/7ced96bd-1214-4ba5-9936-eba19500153a)
 
 
-2c) Enter sudo apt remove suricata press enter, then press enter again.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/226dbac1-0f78-45ab-981e-dbb1fb5b9735)
+2.2 Click on Virtual machines. Click on **Create** and select **Azure virtual machine** from the drop-down menu. ![]![VPN3 select Azure virtual machine](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/c9a5a58c-df82-485c-a50a-8eedd3fc142e)
 
-2d) Verify that suricata is uninstalled.  You will know suricata is uninstalled when you see -bash:/usr/bin/suricata: No such file or directory.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/a43b92ca-3621-4d5b-8832-c71c414db8a6)
+2.3 **Create a virtual machine** by clicking on **Create new** under the Resource group\* box. Name it **ChicagoPD** and click **OK.**
 
+![VPN4 Create new](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/52247f8d-2d18-4630-99c9-190d907a12b3)
 
-Step 3: Enter sudo apt install tcpdump and press enter, then press enter again.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/e8c95676-6624-43a3-9e56-6f6f13848547)
+![VPN5 Name ChicagoPD](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/75b1cc84-f9f7-46be-af71-76155dafc549)
 
+2.4 Type in **Instance details**:
 
-Step 4: Enter apt list --installed then enter.  This will allow you to view the installed files.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/3610b893-5493-4d2c-bac2-33c4566ee57e)
+| **Virtual machine name\***| **Region\***| **Availability Option**| **Security Type**| **Image\***| **Size\***| **Username\***| **Password\***|
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ChicagoPD | (Asia Pacific) Southeast Asia | No infrastructure redundancy required | Standard | Windows 10 Pro, version 22H2 -x64 Gen2 | Standard\_D4s\_v3 – 4 vcpus, 16 GiB memory ($182.50/month) | **Terry**| **Berry1234567**|
 
-Step 5: Enter sudo apt installs suricata then enter, then enter again.  This reinstall suricata.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/231ef3a9-4ab9-447c-b774-fa14eb24a3f0)
-
-
-</p>
-<br />
-
-<p>
+![VPN6 Create a VM1](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/785597b7-48d5-4b58-b5c4-f28d63d0ab9f)
+![VPN7 Create a VM2](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/aab7cba8-9eac-4883-b0b4-fc81924d33f2)
 
 
-Step 6: Enter sudo apt List --installed then enter to display the installed labs.
-![image](https://github.com/TDCybersecurity/osticket-prereqs/assets/142702123/cec62bf4-e756-4f3e-aabd-cfefd27f985c)
+2.5  I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights.
 
-</p>
-<br />
+2.6 **Review + Create** then wait for ****  **Validation passed** then click on **Create.**
 
-<p>
+2.7 **Deployment is in progress,** your resources are being created. Afterwards it will say ****** Your deployment is complete**.
 
-</p>
-<p>
-We have explored how to use APT to install and uninstall packages, verify an installed app, remove an installed app, and list all apps.  Understanding APT is essential for maintaining a healthy Linux system, ensuring you have the right software at your fingertips, and keeping your system secure and up-to-date.</p>
-<br /># Linux APT Application Package Tool
+![VPN8 Your deployment is complete](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/b302010a-b22f-4aea-80a0-8cc2b3ff0b2e)
+
+2.8 Click **Go to resource.** Copy and Paste the Public IP Address: **52.163.223.175**** **
+
+**3 Establish a (RDC) Remote Desktop Connection**
+
+3.1 Go to the Windows Start Menu Search bar and enter **Remote Desktop Connection**
+
+3.2 Paste **Public IP Address**** 52.163.223.175 **into the** Computer **field and click on** Connect.**
+
+![Screenshot 2024-05-17 231347](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/44b7e87c-e8b3-4b16-a9c0-27f36e6ced9d)
+
+3.3 Enter your credentials. Click on **More choices** the **Use a different account.**
+
+3.4 Enter **User name**** Terry **and** Password ****Berry 1234567** and click on **OK.** RDC radio box pop-up opens. Click on **Yes**
+
+3.5 Your Virtual Machine opens, note the IP Address up top.
+
+3.6 **Choose privacy settings for your device**. Select NO for all of them.
+
+![VPN10VMIPaddressandPrivacysettings](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/f689a3d3-ba0a-4f5e-9f31-d6156ada53c2)
+
+3.7 They are Location, Diagnostic data, Tailored experiences, Find my device, Inking &typing, and Advertising ID Click **Accept**
+
+3.8 Ignore installation set-up guide and then open **Microsoft Edge.** Click on **Start without your data.** Uncheck **Bring over data.**
+
+3.9Click on **Continue without this data.** Uncheck **Make you Microsoft experience more useful to you.**
+
+3.9.1 **Confirm and start browsing****.**
+
+3.9.2 Type **whatismyipaddress.com** in the **Edge browser.** Note the results are different from your PC
+![VPN11 VM IPAddress in Singapore](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/13902ea6-5a1d-446e-a152-4f8209ce7641)
+
+
+| **IPv4**| **Internet Service Provider**| **City**| **Region**| **Country**|
+| --- | --- | --- | --- | --- |
+| 52.163.223.175 | Microsoft | Singapore | Singapore | Singapore |
+
+![](RackMultipart20240518-1-nonpfk_html_c5fdac510b3d13a7.png)
+
+**4 Access**  **Proton VPN**  **inside your PC so that you can download and install it in the VM which is in Singapore.**
+
+4.1 Google Proton VPN. Click on **Create account.**
+![VPN12Proton VPN](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/b2047698-d41c-4829-84c4-0c128a5c489c)
+
+![](RackMultipart20240518-1-nonpfk_html_bde12071307f46ff.png) Click on **sign up for free.**
+![VPN13 signupforfree](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/93f89246-c632-4874-a068-d3c7a92c3253)
+
+![](RackMultipart20240518-1-nonpfk_html_7c88bcc924227c7b.png)
+
+4.2 Enter **Email address** and click on **Start using**  **Proton VPN****. **Choose your own password** Berry1234567**
+
+4.3 Copy the URL **account.protonvpn.com/downloads** from **your PC** and paste it **into the VM browser** to open.
+
+4.4 Sign in using **Email address** and **Proton VPN**  **password**** Berry1234567 **. Click on** Sign in**.
+![VPN13protonemail](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/f2fae347-dcab-4e84-91af-c7766f871f2e)
+
+
+
+4.5 On Get Proton VPN for Windows click on **Download**  **Proton VPN**.
+![VPN15 Proton Download](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/10ac466c-8173-4abe-819d-6118b420a4c6)
+
+
+4.6 Go to **Downloads** and open the **ProtonVPN\_v3.2.11** application.
+![VPN17 Install Proton VPN](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/690c53db-2f6e-4109-ae2f-89325342c1fb)
+
+
+4.7 Access **Proton VPN** on the **VM** and sign in using **Email** and **Password**. Click on **Sign in** enter Email
+
+4.8 Open file and **complete installation** pop up box, with **Language**  **English**** OK **then** Next **,** Next, and Install.**
+
+4.9 Sign in with **email** and **password**. They send a **verify** to your email. **Verify your email to continue to Proton**.
+![VPN 19 VPN Proton email verification](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/c923bbe4-b6af-4719-903f-084e910a5d67)
+
+
+4.9.1 Go to **Windows Search Bar** to find **Proton VPN**.
+![VPN20 Proton Start Bar](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/49283f23-4a0f-404b-8a1e-b7d1069f7b44)
+
+
+
+4.9.2 When get into **ProtonVPN**, where are you **CONNECTED**, what is your **IP Address**.
+![VPN23ProtonJapan](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/51e537ac-f897-4106-8084-99c586cc36c4)
+
+
+|
+ |
+ |
+ |
+ |
+ |
+| --- | --- | --- | --- | --- |
+| 138.199.21.197 | Wireguard | Japan | Japan | Japan |
+
+4.9.3 Go back to **whatismyipaddress.com** and **refresh it** to confirm the IP Address and location.
+![VPN23What is myIP address3](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/2748230d-1996-4053-9aae-173f3d140ea2)
+
+
+
+
+| **IPv4**| **Internet Service Provider**| **City**| **Region**| **Country**|
+| --- | --- | --- | --- | --- |
+| 138.199.21.197 | DataCamp Limited | Shinjuku City | Tokyo | Japan |
+
+4.9.4 Browse **Netflix** to see that you are getting **Netflix in Japan** because your **Proton VPN** is in **Japan**.
+![VPN Japan](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/44cbe46e-9bc8-450e-aeca-69423360694f)
+
+
+
+5 Go back to your **(VM) Virtual Machine** and **DELETE all your Resources** in the Azure account to **avoid charges**.
+
+Thank you for stopping by……..hope this improved your understanding of VPNs.
+
