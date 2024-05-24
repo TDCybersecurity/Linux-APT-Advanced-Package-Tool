@@ -11,7 +11,8 @@ A VPN, or Virtual Private Network, is a service that creates a **secure** and **
 - **Safe Browsing:** Reduces the risk of malware and phishing attacks by blocking malicious websites.
 - **Anonymity:** Makes your online actions harder to trace back to you, enhancing your anonymity online.
 
-1 In your browser type in **whatismyipaddress.com**
+<h2>1 In your browser type in <strong>whatismyipaddress.com</strong></h2>
+
 ![VPN1 WhatismyIPAddress](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/5276774c-118e-4cc7-a6c8-de72d421239a)
 ![](RackMultipart20240518-1-nonpfk_html_9d52d1543893b735.jpg)
 
@@ -21,7 +22,7 @@ A VPN, or Virtual Private Network, is a service that creates a **secure** and **
 | --- | --- | --- | --- | --- |
 | 100.2.XX.XXX | Verizon | New York City | New York | United States |
 
-2 Create a **(VM) Virtual Machine** with **(no VPN)** in **Azure** and connect to your PC using **(RDC) Remote Desktop Protocol**.
+<h2>2 Create a <strong>(VM)Virtual Machine</strong> with<strong>(no VPN)</strong> in <strong>Azure</strong> and connect to your PC using <strong>(RDC) Remote Desktop Protocol.</strong></h2>
 
 2.1 Open a browser and enter **portal.azure.com.**
 ![VPN2 portalazurecom](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/7ced96bd-1214-4ba5-9936-eba19500153a)
@@ -55,7 +56,7 @@ A VPN, or Virtual Private Network, is a service that creates a **secure** and **
 
 2.8 Click **Go to resource.** Copy and Paste the Public IP Address: **52.163.223.175**** **
 
-**3 Establish a (RDC) Remote Desktop Connection**
+<h2>3 Establish a (RDC) Remote Desktop Connection</h2>
 
 3.1 Go to the Windows Start Menu Search bar and enter **Remote Desktop Connection**
 
@@ -91,9 +92,10 @@ A VPN, or Virtual Private Network, is a service that creates a **secure** and **
 
 ![](RackMultipart20240518-1-nonpfk_html_c5fdac510b3d13a7.png)
 
-**4 Access**  **Proton VPN**  **inside your PC so that you can download and install it in the VM which is in Singapore.**
+<h2>4 Access  Proton VPN  inside your PC so that you can download and install it in the VM which is in Singapore.</h2>
 
 4.1 Google Proton VPN. Click on **Create account.**
+
 ![VPN12Proton VPN](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/b2047698-d41c-4829-84c4-0c128a5c489c)
 
 ![](RackMultipart20240518-1-nonpfk_html_bde12071307f46ff.png) Click on **sign up for free.**
@@ -126,25 +128,28 @@ A VPN, or Virtual Private Network, is a service that creates a **secure** and **
 ![VPN 19 VPN Proton email verification](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/c923bbe4-b6af-4719-903f-084e910a5d67)
 
 
-4.9.1 Go to **Windows Search Bar** to find **Proton VPN**.
+4.9.1 Go to **Windows Search Bar** to find **Proton VPN**
+
 ![VPN20 Proton Start Bar](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/49283f23-4a0f-404b-8a1e-b7d1069f7b44)
 
 
 
 4.9.2 When get into **ProtonVPN**, where are you **CONNECTED**, what is your **IP Address**.
+
 ![VPN23ProtonJapan](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/51e537ac-f897-4106-8084-99c586cc36c4)
 
 
-|
- |
- |
- |
- |
- |
+
+ 
+ 
+ 
+ 
+| **IPv4**| **Internet Service Provider**|**City**|**Region**|**Country**| 
 | --- | --- | --- | --- | --- |
 | 138.199.21.197 | Wireguard | Japan | Japan | Japan |
 
 4.9.3 Go back to **whatismyipaddress.com** and **refresh it** to confirm the IP Address and location.
+
 ![VPN23What is myIP address3](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/2748230d-1996-4053-9aae-173f3d140ea2)
 
 
@@ -155,11 +160,13 @@ A VPN, or Virtual Private Network, is a service that creates a **secure** and **
 | 138.199.21.197 | DataCamp Limited | Shinjuku City | Tokyo | Japan |
 
 4.9.4 Browse **Netflix** to see that you are getting **Netflix in Japan** because your **Proton VPN** is in **Japan**.
+
 ![VPN Japan](https://github.com/TDCybersecurity/VPN-Virtual-Private-Network/assets/142702123/44cbe46e-9bc8-450e-aeca-69423360694f)
 
 
 
-5 Go back to your **(VM) Virtual Machine** and **DELETE all your Resources** in the Azure account to **avoid charges**.
 
-Thank you for stopping by……..hope this improved your understanding of VPNs.
+<h2>5 Go back to your <strong>(VM) Virtual Machine</strong> and <strong> DELETE all your Resources</strong> in the Azure account to <strong>avoid charges</strong></h2>
+
+<h3>Thank you for reviewing my GitHub IT Project, which demonstrates my hands-on experience with VPN technology.</h3>
 
